@@ -21,12 +21,16 @@
 ```bash
 git clone https://github.com/walking-with-linght/sakurafrp
 ```bash
+
 ### 2. 移动到网站目录并设置权限
+
 ```bash
 mv SakuraPanel/sakura/* /data/wwwroot/my.panel.com/
 chown -R www:www /data/wwwroot/my.panel.com/
 ```bash
+
 ###3. 进入网站目录，编辑以下三个文件，修改数据库信息
+
 /configuration.php - 网站核心配置文件，包含详细注释
 /api/index.php - 用于对接 Frps，只需配置 Token
 /daemon.php - 修改数据库信息，并设置为循环执行
